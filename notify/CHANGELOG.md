@@ -2,6 +2,8 @@
 
 ## unreleased
 
+## notify 9.0.0-rc.4 (2026-05-02)
+
 - CHANGE: preserve watched path representation in `Event.paths` and `Watcher::watched_paths`; relative watch paths now produce relative event paths consistently across backends [#453] [#740]
 - FIX: [kqueue] stop reporting arbitrary existing child paths for non-recursive directory write events [#644]
 - FIX: replace an existing watch when `watch` is called again for the same path, avoiding duplicate FSEvent paths and leaked Windows watch handles [#708]
